@@ -10,9 +10,9 @@ Bienvenidos a la matriz central de control de **ELSH MEDIA**. Desde esta consola
 
 El sistema operativo y motor de distribución se compone de tres microservicios desacoplados:
 
-*   **[media-orchestrator](https://github.com):** ⚙️ El motor ejecutable en Python. Contiene la capa de red Scotty (HTTP POST crudo), la inyección de sesiones activas de Brave Browser y los manifiestos de despliegue estilo **Helm Charts (Jinja2)**.
-*   **[media-registry](https://github.com):** 🗄️ El State Store centralizado. Aloja el inventario maestro global (`inventory.yaml`) y las firmas reutilizables de toda la red de canales.
-*   **[dashboard](https://github.com):** 📊 REPO PÚBLICO ESPEJO. Capa de presentación estática en GitHub Pages que sirve la telemetría del clúster con estilos locales e inmunidad contra bloqueadores en: `https: / / elshmedia.github.io / dashboard /`
+*   **[media-orchestrator](https://elshmedia.github.com/media-orchestrator):** ⚙️ El motor ejecutable en Python. Contiene la capa de red Scotty (HTTP POST crudo), la inyección de sesiones activas de Brave Browser y los manifiestos de despliegue estilo **Helm Charts (Jinja2)**.
+*   **[media-registry](https://elshmedia.github.com/media-registry):** 🗄️ El State Store centralizado. Aloja el inventario maestro global (`inventory.yaml`) y las firmas reutilizables de toda la red de canales.
+*   **[dashboard](https://elshmedia.github.com/dashboard):** 📊 REPO PÚBLICO ESPEJO. Capa de presentación estática en GitHub Pages que sirve la telemetría del clúster con estilos locales e inmunidad contra bloqueadores en: `https: / / elshmedia.github.io / dashboard /`
 
 ---
 
@@ -37,7 +37,7 @@ Para actualizar los KPIs y el panel web de métricas a demanda desde la raíz:
 
 La matriz de canales independientes se despliega bajo repositorios dedicados con prefijo `x-*` para garantizar el aislamiento absoluto de entornos:
 
-*   **[x-aquarixtop](https://github.com):** 🌟 Canal Principal Monetizado (Nicho: Acuarismo Avanzado - Idioma: ES).
+*   **[x-aquarixtop](https://elshmedia.github.com/x-aquarixtop):** 🌟 Canal Principal Monetizado (Nicho: Acuarismo Avanzado - Idioma: ES).
 *   **x-drgeograph:** 🌍 Canal de Geografía y Curiosidades Globales (Idioma: ES).
 *   **x-buceandoxmundo:** 🤿 Canal de Aventura Subacuática y Exploración (Idioma: ES).
 *   *Resto del clúster (35 canales adicionales) aprovisionados en el catálogo central.*
